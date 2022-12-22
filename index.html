@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
     <div id="app">
         <button @click="getNumber()">richiedi un numero all'API</button>
-        <div class="oddNumbers" v-for="oddNumber in oddNumbers">{{oddNumber}}</div>
-        <div class="evenNumbers" v-for="evenNumber in evenNumbers">{{evenNumber}}</div>
+        <div class="odd">{{oddNumbers}}</div>
+        <div class="even">{{evenNumbers}}</div>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
