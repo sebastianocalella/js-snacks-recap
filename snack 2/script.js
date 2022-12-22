@@ -16,11 +16,12 @@ createApp({
             }
         },
         checkInput(inputName){
-            (this.invitati.includes(inputName)) ? 'benvenuto' : 'accesso negato'
+            (this.invitati.includes(inputName)) ? true : false
         }
     },
     created(){
         this.getRandomName(10)
+        console.log(this.invitati)
     }
 
 }).mount('#app')
