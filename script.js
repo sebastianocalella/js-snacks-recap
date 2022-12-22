@@ -12,9 +12,9 @@ createApp({
             axios.get('https://flynn.boolean.careers/exercises/api/random/int')
             .then((response) =>{
                 if (response%2 == 0){
-                    this.even.push(response.data)
+                    this.evenNumbers.push(response.data.response)
                 } else{
-                    this.odd.push(response.data)
+                    this.oddNumbers.push(response.data.response)
                 }
             })
         }
