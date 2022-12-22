@@ -13,8 +13,7 @@
     <div id="app">
         <label for="">inserisci un valore compreso fra 1 e 100</label>
         <input type="text" v-model="userInput" @keyup.enter="getArrayNumbers(1,100,userInput)">
-        <button @click="cLog(numberList)">cLog</button>
-        <p></p>
+        <p v-show="userInput!=0">la somma dei {{userInput}} numeri selezionati è: {{sum}}</p>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
