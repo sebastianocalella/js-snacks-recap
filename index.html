@@ -7,8 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="odd"></div>
-    <div class="even"></div>
+    <button @click="getNumber()">richiedi un numero all'API</button>
+    <div class="oddNumbers" v-for="oddNumber in oddNumbers">{{oddNumber}}</div>
+    <div class="evenNumbers" v-for="evenNumber in evenNumbers">{{evenNumber}}</div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js" integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

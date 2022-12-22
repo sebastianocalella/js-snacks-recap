@@ -3,8 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
     return {
-        odd : [],
-        even : []
+        oddNumbers : [],
+        evenNumbers : []
     }
     },
     methods:{
