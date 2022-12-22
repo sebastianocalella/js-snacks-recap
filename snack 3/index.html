@@ -13,7 +13,7 @@
     <div id="app">
         <input type="text" v-model="userMessage" @keyup.enter="chatting">
         <ul>
-            <li v-for="message in chat">{{message.message}}</li>
+            <li v-for="message in chat" :class="(message.status == 'sent') ? 'sent' : 'received'">{{message.message}}</li>
         </ul>
     </div>
 

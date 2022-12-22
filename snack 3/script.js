@@ -10,7 +10,7 @@ createApp({
         getAnswer(){
             axios.get('https://flynn.boolean.careers/exercises/api/random/sentence')
             .then((response) => {
-                this.chat.push({message : response.data.response, status : 'recived'})
+                this.chat.push({message : response.data.response, status : 'received'})
             })
         },
         writeMessage(){
