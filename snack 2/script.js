@@ -9,7 +9,7 @@ createApp({
     methods:{
         getRandomName(iteration){
             for (let i=0; i<iteration; i++){
-                axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+                axios.get('https://flynn.boolean.careers/exercises/api/random/name')
                 .then( (response) => {
                     this.invitati.push(response.data.response)
                 })
@@ -21,6 +21,7 @@ createApp({
     },
     created(){
         this.getRandomName(10)
+        
         console.log(this.invitati)
     }
 
