@@ -3,7 +3,9 @@ const { createApp } = Vue
 createApp({
     data() {
     return {
-        invitati : []
+        invitati : [],
+        invitato : '',
+        isInvited : false
     }
     },
     methods:{
@@ -16,7 +18,7 @@ createApp({
             }
         },
         checkInput(inputName){
-            (this.invitati.includes(inputName)) ? true : false
+            this.isInvited = this.invitati.includes(inputName)
         }
     },
     created(){

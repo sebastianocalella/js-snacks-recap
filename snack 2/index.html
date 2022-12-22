@@ -14,7 +14,7 @@
         <label for="">inserisci il tuo nome</label>
         <input type="text" v-model="username">
         <button @click="checkInput(username)">verifica se sei invitato</button>
-        <p>{{(checkInput) ? 'benvenuto' : 'accesso negato'}}</p>
+        <p>{{(isInvited) ? 'benvenuto' : 'accesso negato'}}</p>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
