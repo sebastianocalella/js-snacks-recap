@@ -12,8 +12,16 @@
 <body>
     <div id="app">
         <button @click="getNumber()">richiedi un numero all'API</button>
-        <div class="odd">{{oddNumbers}}</div>
-        <div class="even">{{evenNumbers}}</div>
+        <div class="odd">
+            <ul>
+                <li v-for="oddNumber in oddNumbers">{{oddNumber}}</li>
+            </ul>
+        </div>
+        <div class="even">
+            <ul>
+                <li v-for="evenNumber in evenNumbers">{{evenNumber}}</li>
+            </ul>
+        </div>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
