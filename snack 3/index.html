@@ -11,9 +11,9 @@
 <body>
     
     <div id="app">
-        <input type="text" @keyup.enter="getAnswer">
+        <input type="text" v-model="userMessage" @keyup.enter="chatting">
         <ul>
-            <li v-for="message in chat">{{message}}</li>
+            <li v-for="message in chat">{{message.message}}</li>
         </ul>
     </div>
 
